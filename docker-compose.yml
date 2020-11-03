@@ -1,0 +1,10 @@
+version: '2'
+services:
+  availability_AREP:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: simono69/availability-arep:latest
+    container_name: availability_AREP
+    ports:
+      - "4567:6000"
